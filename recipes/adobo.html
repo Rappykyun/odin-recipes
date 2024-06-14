@@ -5,52 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adobo Recipe</title>
     <style>
-        *{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    color: pink;
-    background-color: rgb(22, 17, 17);
-    text-align: center;
-    
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
         }
-        h1{
-            font-size: 60px;
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
         }
-        li{
-
+        
+        .header {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .ingredients {
+            background-color: #f5f5f5;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .ingredients ul {
             list-style: none;
+            margin: 0;
+            padding: 0;
         }
-
+        
+        .ingredients li {
+            margin-bottom: 5px;
+        }
+        
+        .steps {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .steps ol {
+            list-style: decimal;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .steps li {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
-    <h1 >Adobo</h1>
-    <img src="../images/adobo.jpg" alt="Adobo">
-
-    <h2>Description</h2>
-    <p>Adobo is a popular Filipino dish known for its savory and tangy flavors. This dish typically features meat, such as chicken or pork, marinated and simmered in a mixture of vinegar, soy sauce, garlic, bay leaves, and black peppercorns. Adobo is enjoyed for its rich taste and tender texture, making it a beloved comfort food in the Philippines.</p>
-
-    <h2>Ingredients</h2>
-    <ul>
-        <li>1 kg chicken or pork, cut into serving pieces</li>
-        <li>1/2 cup soy sauce</li>
-        <li>1/2 cup vinegar</li>
-        <li>1 cup water</li>
-        <li>6 cloves garlic, minced</li>
-        <li>2 bay leaves</li>
-        <li>1 teaspoon whole black peppercorns</li>
-        <li>1 tablespoon cooking oil</li>
-        <li>Salt to taste</li>
-    </ul>
-
-    <h2>Steps</h2>
-    <ol>
-        <li>In a large bowl, combine the soy sauce, vinegar, minced garlic, bay leaves, and black peppercorns. Add the meat and marinate for at least 30 minutes, preferably overnight for better flavor.</li>
-        <li>Heat the cooking oil in a large pot over medium heat. Remove the meat from the marinade and reserve the marinade.</li>
-        <li>Brown the meat in the hot oil until it is golden on all sides.</li>
-        <li>Add the reserved marinade and water to the pot, bringing it to a boil.</li>
-        <li>Reduce the heat to low and simmer for about 45 minutes to 1 hour, or until the meat is tender and the sauce has thickened.</li>
-        <li>Season with salt to taste. Serve the adobo hot with steamed rice.</li>
-    </ol>
+    <div class="container">
+        <div class="header">Adobo Recipe</div>
+        <img class="image" src="../images/adobo.jpg" alt="Adobo">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 kg chicken or pork, cut into serving pieces</li>
+                <li>1/2 cup soy sauce</li>
+                <li>1/2 cup vinegar</li>
+                <li>1 cup water</li>
+                <li>6 cloves garlic, minced</li>
+                <li>2 bay leaves</li>
+                <li>1 teaspoon whole black peppercorns</li>
+                <li>1 tablespoon cooking oil</li>
+                <li>Salt to taste</li>
+            </ul>
+        </div>
+        <div class="steps">
+            <h2>Steps</h2>
+            <ol>
+                <li>In a large bowl, combine the soy sauce, vinegar, minced garlic, bay leaves, and black peppercorns. Add the meat and marinate for at least 30 minutes, preferably overnight for better flavor.</li>
+                <li>Heat the cooking oil in a large pot over medium heat. Remove the meat from the marinade and reserve the marinade.</li>
+                <li>Brown the meat in the hot oil until it is golden on all sides.</li>
+                <li>Add the reserved marinade and water to the pot, bringing it to a boil.</li>
+                <li>Reduce the heat to low and simmer for about 45 minutes to 1 hour, or until the meat is tender and the sauce has thickened.</li>
+                <li>Season with salt to taste. Serve the adobo hot with steamed rice.</li>
+            </ol>
+        </div>
+    </div>
 </body>
 </html>
+

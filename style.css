@@ -1,18 +1,47 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-align: center;
-    align-items: center;
+    color: #333;
 }
-li {
-padding-bottom: 5px;
-}
-a{
+
+a {
     text-decoration: none;
-    font-size: 25px;
-    color: rgb(0, 0, 0);
+    font-size: 22px;
+    color: #222;
     font-weight: bold;
+    transition: font-size 0.3s ease;
 }
+
 a:hover {
-    font-size: 30px;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
